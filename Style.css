@@ -1,0 +1,315 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background: #ecc410;
+	color: #000000;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 10%;
+	background: #fefefe;
+	display:flex;
+	justify-content: Space-between;
+	align-items: center;
+	z-index: 100;
+}
+.logo{
+	font-size: 25px;
+	color: #111010;
+	text-decoration: none;
+	font-weight:600;
+}
+.navbar a{
+	font-size:18px;
+	color: #111010;
+	text-decoration: none;
+	font-weight: none;
+	margin-left: 35px;
+	transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+	color:#ecc410;
+}
+
+.home{
+	height: 100vh;  
+	display:flex;
+	align-items: center;
+	padding: 160px;
+}
+
+.home-content{
+	color: #f8fbfc;
+	max-width: 650px;
+}
+.home-content h1{
+	font-size: 30px;
+	font-weight: 700;
+	line-height:1.2;
+}
+.home-content h3 {
+	font-size: 25px;
+	font-weight:700;
+	color: #084dbe;
+	}
+.home-content p{
+	font-size: 16px;
+	margin: 20px 0 40px;
+}
+.home-content .btn-box{
+	display: flex;
+	justify-content: Space-between;
+	width: 345px;
+	height: 50px;
+	
+}
+.btn-box a{
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width:150px;
+	height:100%; 
+	background: #084dbe;
+	border: 2px solid;
+	border-radius: 8px;
+	font-size: 19px;
+	color: #fbfbfb;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 1px;
+	z-index: 1;
+	overflow: hidden;
+}
+.btn-box a:nth-child(2){
+	background: transparent;
+	color: #084dbe;
+}
+.btn-box a:nth-child(2)::before {
+	background: #ffffff;
+}
+	
+.btn-box a::before{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: #000000;
+	z-index: -1;	
+	transition: .5s;
+}
+.btn-box a:hover::before{
+	width: 100%;
+	
+}
+.home-sci{
+	position: absolute;
+	bottom: 40px;
+	width: 170px;
+	background: #ef1313;
+}
+.home-sci a{
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid #084dbe;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #0cefba;
+	text-decoration: none;
+}
+.home-sci a::before{
+	content: '';
+	position: ;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: 
+
+}
+/* New Styles for the About Me Section */
+.about-me {
+    background-image: url('will.JPG'); /* Add your background image */
+    background-size: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ecc410; /* Background color as fallback */
+    color: #fff;
+    padding: 250px 0; /* Adjust the padding as needed */
+    text-align: center;
+    margin-top: 20px; /* Add margin to push it down */
+}
+
+
+.about-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Black transparent box */
+    color: #ecc410; /* Gold-colored text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* Existing CSS styles */
+
+/* Styles for the Work Experience Section */
+.WorkExperience {
+    background-image: url('walid.JPG'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ecc410; /* Background color as fallback */
+    color: #fff;
+    padding: 250px 0; /* Adjust the padding as needed */
+    text-align: center;
+    margin-top: 20px; /* Add margin to push it down */
+}
+
+.WorkExperience-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.WorkExperience-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.WorkExperience-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.WorkExperience-content ul li {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Styles for the Footer */
+.footer-container {
+    background-color: #FFD700;
+    color: #FFD700;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 10px; /* Adjust this margin as needed */
+}
+
+
+/* Styles for the Contact Section */
+.contact {
+    background-color: #ecc410;
+    color: #000;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px; /* Add margin to push it down */
+}
+
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form input[type="tel"],
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact form button[type="submit"] {
+    background-color: #ecc410;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact form button[type="submit"]:hover {
+    background-color: #c8a009;
+/* Styles for the Footer */
+.footer-container {
+    background-color: #111010;
+    color: #FFD700;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 10px; /* Adjust this margin as needed */
+}
+
+
+.footer {
+    background-color: #FFD700; /* Set the background color to gold */
+    color: #FFD700; /* You can set the text color to white or another suitable color for visibility */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 10px; /* Adjust this margin as needed */
+}
+
+
+
+/* Styles for the Footer in the About Section */
+.about-me .footer-container {
+    background-color: #FFD700;
+    color: #FFD700;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0; /* Adjust this to position the footer at the bottom */
+    z-index: 100; /* Use a higher z-index value */
+}
